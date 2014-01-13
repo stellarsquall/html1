@@ -1,0 +1,31 @@
+
+.primary {
+	position: absolute;
+	opacity:1.0;
+	
+}
+
+.secondary {
+	position: relative;
+	z-index:-1;
+}
+.primary
+{
+transition: 2s;
+}
+
+.secondary
+{
+transition: 2s;
+-webkit-transform:rotateY(-180deg);
+}
+
+.portfolio-item:hover .primary
+{
+-webkit-transform:rotateY(180deg);
+}
+
+.portfolio-item:hover .secondary
+{
+-webkit-transform:rotateY(0deg);
+}
